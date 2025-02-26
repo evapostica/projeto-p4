@@ -21,7 +21,11 @@ function preload() {
 
 function setup() {
   // tamanho do feednplay / 4
-  createCanvas(2430, 480);
+  // createCanvas(2430, 480);
+
+  // tamanho para o pc
+  createCanvas(1440, 284);
+
   // iniciar captura de video 
   video = createCapture(VIDEO);
   video.size(width, height);
