@@ -73,13 +73,13 @@ function checkActivity() {
     }
     // se estiver no estado do timer
     else if (currentState === 'timerPersonInView') {
-      // e a pessoa passar 5s a frente do feednplay
-      if (millis() - inViewTime >= 5000) {
+      // e a pessoa passar 3s a frente do feednplay
+      if (millis() - inViewTime >= 3000) {
         // assumir que a pessoa esta a ver a noticia
         currentState = 'personInView';
         // reset do timer
         inViewTime = null;
-        console.log(`[TIMER] Finished 5-second timer - someone is watching`);
+        console.log(`[TIMER] Finished 3-second timer - someone is watching`);
       }
     }
     // se a pessoa estiver a ver a noticia
